@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ .Title }}</title>
+</head>
+<body>
+  <h1>Login's page</h1>
+  <form action="/u/login" method="post">
+      <input type="text" name="username" required placeholder="имя">
+      <input type="text" name="password" required placeholder="пароль">
+      <button type="submit">готово</button>
+  </form>
+    <h3>{{ .error }}</h3>
+</body>
+</html>
